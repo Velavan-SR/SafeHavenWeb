@@ -1,0 +1,95 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 260 43% 98%;
+    --foreground: 260 10% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 260 10% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 260 10% 14%;
+
+    --primary: 255 84% 75%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 267 29% 54%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 260 20% 94%;
+    --muted-foreground: 260 10% 56%;
+
+    --accent: 260 25% 94%;
+    --accent-foreground: 260 10% 25%;
+
+    --destructive: 354 85% 57%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 260 20% 90%;
+    --input: 260 20% 90%;
+    --ring: 260 80% 70%;
+
+    --radius: 0.8rem;
+
+    --sidebar-background: 260 43% 97%;
+    --sidebar-foreground: 260 10% 25%;
+    --sidebar-primary: 255 84% 75%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 260 25% 94%;
+    --sidebar-accent-foreground: 260 10% 25%;
+    --sidebar-border: 260 20% 90%;
+    --sidebar-ring: 255 84% 75%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  .safehaven-btn {
+    @apply px-6 py-3 rounded-full shadow-md transition-all duration-300;
+  }
+
+  .safehaven-btn-primary {
+    @apply bg-safehaven-primary text-white hover:opacity-90;
+  }
+
+  .safehaven-btn-secondary {
+    @apply bg-safehaven-secondary text-white hover:opacity-90;
+  }
+
+  .safehaven-btn-soft {
+    @apply bg-safehaven-soft-purple text-safehaven-secondary hover:bg-opacity-80;
+  }
+
+  .safehaven-btn-alert {
+    @apply bg-safehaven-alert-red text-white hover:bg-opacity-90;
+  }
+
+  .safehaven-card {
+    @apply bg-white rounded-xl p-6 shadow-md;
+  }
+
+  .safehaven-input {
+    @apply rounded-lg border border-safehaven-neutral-gray/30 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-safehaven-primary;
+  }
+
+  .safehaven-label {
+    @apply text-sm font-medium text-safehaven-neutral-gray mb-1;
+  }
+
+  .sos-pulse {
+    @apply animate-pulse-alert;
+  }
+}
