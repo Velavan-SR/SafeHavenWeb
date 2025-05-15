@@ -4,7 +4,7 @@
 SafeHaven is a web application designed to provide a comprehensive safety solution for women and children. The application offers emergency SOS alerts, legal assistance, virtual counseling, and gamified educational activities to empower users with knowledge and resources for their protection.
 
 ## Project URL
-Will be added after deployment (Currently in development)
+https://safe-haven-web.vercel.app/
 
 ## Key Features
 
